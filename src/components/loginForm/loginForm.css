@@ -1,0 +1,82 @@
+.form {
+	padding: 20px 0;
+	background: #454545;
+	border-radius: 10px;
+	width: 300px;
+	box-shadow: 0 0 16px 1px #000;
+	color: #fff;
+}
+
+.form-header {
+	font-size: calc(14px + 2vmin);
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+.form input {
+	border-radius: 15px;
+	border: 2px solid transparent;
+	font-size: 16px;
+	font-family: inherit;
+	padding: 10px;
+	transition: .4s;
+}
+
+.form-group {
+	padding: 20px;
+	border-bottom: 2px solid #fff;
+	position: relative;
+}
+
+.focus-input {
+	height: 2px;
+	background: linear-gradient(45deg, #222222, #4D4D4D, #222222);
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	right: 100%;
+	transition: .3s ease;
+}
+
+.form input:focus {
+	outline: transparent;
+	border: 2px solid #969696;
+}
+
+.form input:focus ~ .focus-input {
+	right: 0;
+}
+
+.btn-submit {
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: .15em;
+	font-weight: bold;
+	color: inherit;
+	border-radius: 28px;
+	background: linear-gradient(0deg, #222222, #4D4D4D, #222222);
+	border: none;
+	box-shadow: 0 0 1px 1px #fff;
+	padding: 10px 25px;
+	margin-top: 25px;
+	outline: transparent;
+}
+
+.btn-submit:focus {
+	box-shadow: 0 0 3px 1px #fff;
+}
+
+.checkbox-remember-me {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.checkbox-remember-me input {
+	vertical-align: middle;
+}
+
+.error-message {
+	color: #d52c2c;
+	display: block;
+	min-height: 21px;
+}
